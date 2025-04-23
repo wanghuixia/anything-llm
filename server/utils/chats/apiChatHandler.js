@@ -640,7 +640,7 @@ async function streamChat({
     rawHistory
   );
 
-  // If streaming is not explicitly enabled for connector
+  // If streaming is not explicitly enabled for connector //todo huixia大模型发送接口
   // we do regular waiting of a response and send a single chunk.
   if (LLMConnector.streamingEnabled() !== true) {
     console.log(

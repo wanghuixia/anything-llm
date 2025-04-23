@@ -181,7 +181,7 @@ class OllamaAILLM {
       },
     };
   }
-
+//todo huixia大模型真正调用的地方
   async streamGetChatCompletion(messages = null, { temperature = 0.7 }) {
     const measuredStreamRequest = await LLMPerformanceMonitor.measureStream(
       this.client.chat({

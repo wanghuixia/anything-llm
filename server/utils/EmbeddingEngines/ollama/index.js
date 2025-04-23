@@ -1,6 +1,6 @@
 const { maximumChunkLength } = require("../../helpers");
 const { Ollama } = require("ollama");
-
+/** todo huixia 修改此处的代码返回负债均衡的ip和端口 */
 class OllamaEmbedder {
   constructor() {
     if (!process.env.EMBEDDING_BASE_PATH)
@@ -18,6 +18,10 @@ class OllamaEmbedder {
       `initialized with model ${this.model} at ${this.basePath}. num_ctx: ${this.embeddingMaxChunkLength}`
     );
   }
+
+
+  
+
 
   log(text, ...args) {
     console.log(`\x1b[36m[${this.constructor.name}]\x1b[0m ${text}`, ...args);
